@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - RK ENTERPRISES</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="dairy-animation">
+
+    <div class="dairy-icon">✨</div>
+    <div class="dairy-icon">🍨</div>
+    <div class="dairy-icon">🍧</div>
+    <div class="dairy-icon">🍦</div>
+    <div class="dairy-icon">🍰</div>
+    <div class="dairy-icon">🍪</div>
+    <div class="dairy-icon">🍩</div>
+    <div class="dairy-icon">🍫</div>
+    <div class="dairy-icon">🍬</div>
+    <div class="dairy-icon">🍭</div>
+    <div class="dairy-icon">🫛</div>
+    <div class="dairy-icon">🥛</div>
+    <div class="dairy-icon">🎂</div>
+
+  </div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="profile.html">Profile</a>
+
+        <a href="gallery.html">Products</a>
+
+        <a href="cart.html">
+            🛒 Cart (<span id="cartCount">0</span>)
+        </a>
+
+    </nav>
+
+
+    <!-- ==================== PRODUCTS ==================== -->
+
+    <section class="gallery">
+
+        <h2>🛍️ Our Products</h2>
+
+        <p class="products-subtitle">
+            Browse our available Amul products
+            and add your favourites to the cart.
+        </p>
+
+
+        <!-- SEARCH -->
+
+        <input
+            type="text"
+            id="searchProducts"
+            placeholder="🔍 Search products..."
+            onkeyup="searchProducts()"
+        >
+
+
+        <!-- CATEGORY FILTERS -->
+
+        <div class="category-buttons">
+
+            <button onclick="filterProducts('all')">
+                All
+            </button>
+
+            <button onclick="filterProducts('milk')">
+                🥛 Milk
+            </button>
+
+            <button onclick="filterProducts('butter')">
+                🧈 Butter
+            </button>
+
+            <button onclick="filterProducts('cheese')">
+                🧀 Cheese
+            </button>
+
+            <button onclick="filterProducts('curd')">
+                🥣 Curd
+            </button>
+
+            <button onclick="filterProducts('paneer')">
+                🧀 Paneer
+            </button>
+
+            <button onclick="filterProducts('ghee')">
+                🧈 Ghee
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT CARDS -->
+
+        <div class="gallery-container">
+
+
+            <!-- MILK -->
+
+            <div class="gallery-item" data-category="milk">
+
+                <img
+                    src="images/product1.jpg"
+                    alt="Amul Milk"
+                >
+
+                <h3>🥛 Amul Milk</h3>
+
+                <p>
+                    Fresh and quality Amul Milk.
+                </p>
+
+                <p>
+                    <strong>₹60</strong>
+                </p>
+
+                <button
+                    onclick="addToCart('Amul Milk', 60)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- BUTTER -->
+
+            <div class="gallery-item" data-category="butter">
+
+                <img
+                    src="images/product2.jpg"
+                    alt="Amul Butter"
+                >
+
+                <h3>🧈 Amul Butter</h3>
+
+                <p>
+                    Delicious and creamy Amul Butter.
+                </p>
+
+                <p>
+                    <strong>₹55</strong>
+                </p>
+
+                <button
+                    onclick="addToCart('Amul Butter', 55)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- CHEESE -->
+
+            <div class="gallery-item" data-category="cheese">
+
+                <img
+                    src="images/product3.jpg"
+                    alt="Amul Cheese"
+                >
+
+                <h3>🧀 Amul Cheese</h3>
+
+                <p>
+                    Rich and tasty Amul Cheese.
+                </p>
+
+                <p>
+                    <strong>₹90</strong>
+                </p>
+
+                <button
+                    onclick="addToCart('Amul Cheese', 90)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- CURD -->
+
+            <div class="gallery-item" data-category="curd">
+
+                <img
+                    src="images/product4.jpg"
+                    alt="Amul Curd"
+                >
+
+                <h3>🥣 Amul Curd</h3>
+
+                <p>
+                    Fresh and creamy Amul Curd.
+                </p>
+
+                <p>
+                    <strong>₹40</strong>
+                </p>
+
+                <button
+                    onclick="addToCart('Amul Curd', 40)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PANEER -->
+
+            <div class="gallery-item" data-category="paneer">
+
+                <img
+                    src="images/product5.jpg"
+                    alt="Amul Paneer"
+                >
+
+                <h3>🧀 Amul Paneer</h3>
+
+                <p>
+                    Soft and delicious Amul Paneer.
+                </p>
+
+                <p>
+                    <strong>₹100</strong>
+                </p>
+
+                <button
+                    onclick="addToCart('Amul Paneer', 100)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- GHEE -->
+
+            <div class="gallery-item" data-category="ghee">
+
+                <img
+                    src="images/product6.jpg"
+                    alt="Amul Ghee"
+                >
+
+                <h3>🧈 Amul Ghee</h3>
+
+                <p>
+                    Rich and delicious Amul Ghee.
+                </p>
+
+                <p>
+                    <strong>₹150</strong>
+                </p>
+
+                <button
+                    onclick="addToCart('Amul Ghee', 150)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== QUICK CONTACT ==================== -->
+
+    <section class="quick-contact">
+
+        <h2>📲 Need Help?</h2>
+
+        <p>
+            Contact RK ENTERPRISES on WhatsApp
+            for product enquiries and orders.
+        </p>
+
+        <a
+            href="https://wa.me/917876138676"
+            target="_blank"
+            class="whatsapp-button"
+        >
+            💬 Chat on WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer>
+
+        <p>
+            © 2026 RK ENTERPRISES
+        </p>
+
+        <p>
+            Amul Products & Online Ordering
+        </p>
+
+    </footer>
+
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

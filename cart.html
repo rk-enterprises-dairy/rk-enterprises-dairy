@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart - RK ENTERPRISES</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="dairy-animation">
+
+    <div class="dairy-icon">✨</div>
+    <div class="dairy-icon">🍨</div>
+    <div class="dairy-icon">🍧</div>
+    <div class="dairy-icon">🍦</div>
+    <div class="dairy-icon">🍰</div>
+    <div class="dairy-icon">🍪</div>
+    <div class="dairy-icon">🍩</div>
+    <div class="dairy-icon">🍫</div>
+    <div class="dairy-icon">🍬</div>
+    <div class="dairy-icon">🍭</div>
+    <div class="dairy-icon">🫛</div>
+    <div class="dairy-icon">🥛</div>
+    <div class="dairy-icon">🎂</div>
+
+   </div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="profile.html">Profile</a>
+
+        <a href="gallery.html">Products</a>
+
+        <a href="cart.html">
+            🛒 Cart (<span id="cartCount">0</span>)
+        </a>
+
+    </nav>
+
+
+    <!-- ==================== CART ==================== -->
+
+    <section class="cart-page">
+
+        <h2>🛒 Your Shopping Cart</h2>
+
+        <p>
+            Review your selected products before placing your order.
+        </p>
+
+        <!-- CART PRODUCTS -->
+
+        <div id="cartItems">
+
+            <!-- Products will appear here using JavaScript -->
+
+        </div>
+
+        <!-- TOTAL -->
+
+        <h2 id="cartTotal">
+            Total: ₹0
+        </h2>
+
+    </section>
+
+
+    <!-- ==================== CUSTOMER DETAILS ==================== -->
+
+    <section class="order-section">
+
+        <h2>📦 Customer Details</h2>
+
+        <p>
+            Enter your details to place your order.
+        </p>
+
+
+        <!-- NAME -->
+
+        <input
+            type="text"
+            id="customerName"
+            placeholder="Enter your name"
+        >
+
+
+        <!-- PHONE -->
+
+        <input
+            type="tel"
+            id="customerPhone"
+            placeholder="Enter your phone number"
+        >
+
+
+        <!-- ADDRESS -->
+
+        <textarea
+            id="customerAddress"
+            rows="4"
+            placeholder="Enter your delivery address"
+        ></textarea>
+
+
+        <!-- PLACE ORDER -->
+
+        <button onclick="placeOrder()">
+            📲 Place Order on WhatsApp
+        </button>
+
+    </section>
+
+
+    <!-- ==================== BUSINESS CONTACT ==================== -->
+
+    <section class="contact-section">
+
+        <h2>📞 Contact RK ENTERPRISES</h2>
+
+        <p>
+            For product enquiries or assistance,
+            contact us directly.
+        </p>
+
+
+        <a href="tel:7876138676">
+            📞 7876138676
+        </a>
+
+
+        <a href="tel:9805278531">
+            📞 9805278531
+        </a>
+
+
+        <a
+            href="https://wa.me/917876138676"
+            target="_blank"
+        >
+            💬 WhatsApp Us
+        </a>
+
+    </section>
+
+
+    <!-- ==================== ADDRESS ==================== -->
+
+    <section class="contact-section">
+
+        <h2>📍 Our Address</h2>
+
+        <p>
+            Jawala Nagar, Ward No. 7,<br>
+            Rest House, Bhota,<br>
+            Tehsil Barsar,<br>
+            District Hamirpur,<br>
+            Himachal Pradesh - 176041
+        </p>
+
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer>
+
+        <p>
+            © 2026 RK ENTERPRISES
+        </p>
+
+        <p>
+            Amul Products & Online Ordering
+        </p>
+
+    </footer>
+
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
